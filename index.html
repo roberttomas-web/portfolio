@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UPDATE | UPDATE</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="UPDATE">
+    <meta name="author" content="Robert T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="UPDATE | UPDATE">
+    <meta property="og:description" content="UPDATE">
+    <meta property="og:image" content="images/UPDATE.jpg">
+
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"UPDATE",
+            "name":"UPDATE",
+            "description":"UPDATE"
+        }
+    </script>
+
+    <script src="script.js" defer></script>
+    <link href="output.css" rel="stylesheet">
+    <!-- Bootsrap for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="z-50 sticky flex top-0 bg-white w-full h-[80px] pl-6 xl:pl-0 xl:justify-center items-center shadow shadow-stone-100">
+        <ul class="hidden md:flex gap-7 lg:gap-8 text-lg font-semibold">
+            <li>
+                <a href="#anchor-home" class="nav-item">Home</a>
+            </li>
+            <li>
+                <a href="#anchor-about" class="nav-item">About</a>
+            </li>
+            <li>
+                <a href="#anchor-experience" class="nav-item">Experience</a>
+            </li>
+            <li>
+                <a href="#anchor-projects" class="nav-item">Projects</a>
+            </li>
+            <li>
+                <a href="#anchor-skills" class="nav-item">Skills</a>
+            </li>
+             <li>
+                <a href="#anchor-contact" class="nav-item">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Hamburger icon -->
+        <i id="hamburger-icon" class="bi bi-list md:hidden text-3xl cursor-pointer"></i>
+
+        <!-- Download resume button-->
+        <a href="robert-tomas-resume.pdf" target="_blank" class="group absolute right-[10px] lg:right-[100px] flex items-center gap-2 text-lg font-semibold overflow-hidden button-1 hover:text-white transition-colors duration-500">
+            <div class="absolute z-0 left-0 bg-indigo-400 rounded-xl w-0 h-full transition-[width] duration-400 group-hover:w-full"></div>
+            <p class="z-10 notfancy">Download Resume</p>
+            <i class="bi bi-file-earmark-arrow-down   z-10"></i>
+        </a>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav id="mobile-nav" class="z-40 md:hidden fixed top-0 bg-white w-full flex justify-center shadow -translate-y-[250px] overflow-hidden transition-transform duration-500">
+        <ul class="flex flex-col">
+            <li>
+                <a href="#anchor-home" class="nav-item-hamb">Home</a>
+            </li>
+            <li>
+                <a href="#anchor-about" class="nav-item-hamb">About</a>
+            </li>
+            <li>
+                <a href="#anchor-experience" class="nav-item-hamb">Experience</a>
+            </li>
+            <li>
+                <a href="#anchor-projects" class="nav-item-hamb">Projects</a>
+            </li>
+            <li>
+                <a href="#anchor-skills" class="nav-item-hamb">Skills</a>
+            </li>
+            <li>
+                <a href="#anchor-contact" class="nav-item-hamb">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="anchor-home" class="w-full flex justify-center items-center h-[60vh]">
+
+        <div class="flex justify-center items-center w-full lg:w-[50vw] h-full lg:pl-30 lg:-mr-20">
+            <div class="flex flex-col gap-8 w-2/3">
+                <h1 class="text-7xl font-semibold fancy whitespace-nowrap">Hi, I'm Robert Tomas.</h1>
+                <h2 class="text-2xl lighter-text">I'm a CMS professional with experience supporting large institutions and am building towards front-end development.</h2>
+                <!-- Download resume button-->
+                <a href="robert-tomas-resume.pdf" target="_blank" class="group relative w-fit flex items-center gap-2 text-lg font-semibold overflow-hidden button-1 hover:text-white transition-colors duration-500">
+                    <div class="absolute z-0 left-0 bg-indigo-400 rounded-xl w-0 h-full transition-[width] duration-400 group-hover:w-full"></div>
+                    <p class="z-10 notfancy">Download Resume</p>
+                    <i class="bi bi-file-earmark-arrow-down   z-10"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex justify-center items-center w-[50vw] h-full">
+            <img src="images/header-image-003.jpg" class="w-[30vw] xl:pr-20 xl:-ml-20">
+        </div>
+    
+    </header>
+
+    <!-- About Me -->
+    <div id="anchor-about" class="w-full px-10 lg:px-[23vw] flex flex-col justify-center items-center gap-8 py-20 bg-2">
+        <h2 class="fancy text-4xl font-semibold">About Me</h2>
+        <p class="lighter-text text-lg notfancy">I am a dedicated professional specializing in crafting engaging, user-centric digital experiences through effective content management. With expertise in leveraging CMS platforms, particularly Adobe Experience Manager (AEM), I excel at developing dynamic and functional web solutions. Highly organized and dependable, I thrive in managing multiple priorities while maintaining a positive attitude and a strong willingness to take on additional responsibilities to achieve team goals. In addition to my CMS expertise, I am actively expanding my skills across all areas of web development, with a particular focus on front-end development, building seamless, visually appealing, and accessible digital experiences that connect with users.</p>
+    </div>
+
+    <!-- Experience -->
+    <div id="anchor-experience" class="w-full px-10 lg:px-[23vw] flex flex-col justify-center items-center gap-8 py-20">
+        <h2 class="fancy text-4xl font-semibold">Experience</h2>
+        <div class="flex flex-col gap-8">
+
+            <div class="flex flex-col gap-3 shadow p-10 rounded-2xl">
+                <h3 class="text-2xl font-semibold fancy">Digital Engagement Officer - Web Transformation</h3>
+                <p class="lighter-text notfancy">University of New South Wales • May 2024 - Jan-2025</p>
+                <p class="text-lg">Delivered website development, migration, and maintenance across UNSW platforms. Oversaw transition from Drupal to AEM, conducted staff training, produced resources, and managed content, assets, and permissions-ensuring usability, accessibility, and seamless client collaboration.</p>
+                <ul class="flex gap-3">
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">AEM</li>
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">Drupal</li>
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">Wrike</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-3 shadow p-10 rounded-2xl">
+                <h3 class="text-2xl font-semibold fancy">Web Channel and Optimisation Specialist</h3>
+                <p class="lighter-text notfancy">Aware Super • May 2022 - Dec 2023</p>
+                <p class="text-lg">Enhanced digital engagement by designing AEM component-based layouts, managing content, and integrating analytics. Collaborated with UX/UI, marketing, and cross-functional teams to optimise user experience, migrate legacy systems, and train staff for sustainable, data-driven website improvements.</p>
+                <ul class="flex gap-3">
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">AEM</li>
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">Sitecore</li>
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">Jira</li>
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">HTML</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-3 shadow p-10 rounded-2xl">
+                <h3 class="text-2xl font-semibold fancy">Intern: Online Office Coordinator - Online Orders</h3>
+                <p class="lighter-text notfancy">Mint Window & Door Solutions • Mar 2017 - Apr 2022</p>
+                <p class="text-lg">Supported business operations by managing online orders, social media, and event planning. Organised spreadsheets, boosted brand visibility, and gained professional development-building practical industry experience and contributing to improved efficiency, engagement, and client interest.</p>
+                <ul class="flex gap-3">
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">AEM</li>
+                    <li class="bg-2 px-3 py-2 rounded-3xl font-semibold shadow">Jira</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Projects -->
+    <div id="anchor-projects" class="w-full px-10 lg:px-[23vw] flex flex-col justify-center items-center gap-8 py-20 bg-2">
+        <h2 class="fancy text-4xl font-semibold">Personal Projects</h2>
+
+        <div class="flex flex-col lg:flex-row gap-6">
+            
+            <a href="projects/stellar-dynamics/src/index.html" class="hover:-translate-y-[6px] duration-300 bg-white hover:shadow hover:shadow-indigo-300 transition-all">
+                <div class="w-[80vw] lg:w-[25vw] shadow">
+                    <img src="images/project-cover-001.jpg" class="gradient-bottom rounded-t-lg">
+                    <div class="bg-white flex flex-col gap-4 p-6">
+                        <h3 class="text-2xl font-semibold fancy">Stellar Dynamics</h3>
+                        <p class="lighter-text -mt-3">Fictional landing page</p>
+                        <p class="text-lg">Stellar Dynamics pioneers the next era of space exploration with breakthrough propulsion, orbital habitats, and interplanetary transport solutions; engineering the future to carry humanity beyond Earth and into the stars.</p>
+                        <div class="flex gap-3 font-semibold">
+                            <p class="ml-auto">Visit Site</p>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/the-cryptid-times/src/index.html" class="hover:-translate-y-[6px] duration-300 bg-white hover:shadow hover:shadow-indigo-300 transition-all">
+                <div class="w-[80vw] lg:w-[25vw] shadow">
+                    <img src="images/project-cover-002.jpg" class="gradient-bottom rounded-t-lg">
+                    <div class="bg-white flex flex-col gap-4 p-6">
+                        <h3 class="text-2xl font-semibold fancy">The Cryptid Times</h3>
+                        <p class="lighter-text -mt-3">Fictional landing page</p>
+                        <p class="text-lg">The Cryptid Times delivers breaking news, eyewitness sightings, and scientific insights into legendary creatures; bridging folklore and research to uncover hidden mysteries lurking beyond the edges of our world.</p>
+                        <div class="flex gap-3 font-semibold">
+                            <p class="ml-auto">Visit Site</p>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/living-spaces-convention/src/index.html" class="hover:-translate-y-[6px] duration-300 bg-white hover:shadow hover:shadow-indigo-300 transition-all">
+                <div class="w-[80vw] lg:w-[25vw] shadow">
+                    <img src="images/project-cover-003.jpg" class="gradient-bottom rounded-t-lg">
+                    <div class="bg-white flex flex-col gap-4 p-6">
+                        <h3 class="text-2xl font-semibold fancy">Living Spaces Convention</h3>
+                        <p class="lighter-text -mt-3">Example landing page</p>
+                        <p class="text-lg">The Living Spaces Convention brings visionary architects, designers, and planners together in a free global livestream. Experience groundbreaking talks, fresh ideas, and inspiring design perspectives shaping the future of sustainable living.</p>
+                        <div class="flex gap-3 font-semibold">
+                            <p class="ml-auto">Visit Site</p>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- Skills -->
+    <div id="anchor-skills" class="w-full px-10 lg:px-[23vw] flex flex-col justify-center items-center gap-8 py-20">
+
+        <h2 class="fancy text-4xl font-semibold">Skills / Tools</h2>
+
+
+
+        <div class="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 xl:gap-0">
+
+            <div class="flex flex-col xl:items-end gap-10 w-[80vw] xl:w-[36vw] h-full xl:pl-10">
+
+                <div class="flex gap-2">
+                    <i class="bi bi-boxes text-2xl"></i>
+                    <h3 class="text-2xl font-semibold fancy w-[31vw]">CMS Tools</h3>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">AEM</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[91%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Drupal</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[69%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Wordpress</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[80%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Sitecore</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[78%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col gap-10 w-[80vw] xl:w-[36vw] h-full xl:pl-10">
+
+                <div class="flex gap-3">
+                    <i class="bi bi-code text-2xl"></i>
+                    <h3 class="text-2xl font-semibold fancy">Tech Skills</h3>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">HTML/CSS</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[83%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Photoshop</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[90%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Adobe Analytics</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[60%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">JavaScript</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[78%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Tailwind CSS</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[83%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">C#</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[83%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Java</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[72%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">Python</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[80%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">PHP</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[67%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-12 xl:gap-6 items-center">
+                        <p class="bg-2 w-[25vw] min-w-[110px] xl:w-[10vw] notfancy text-center px-6 py-2 rounded-lg font-semibold border border-stone-100">MySQL</p>
+                        <div class="relative w-[55vw] xl:w-[22vw] h-4 bg-indigo-300/60 rounded-2xl">
+                            <div class="relative w-[65%] h-4 bg-indigo-500/80 rounded-2xl"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div id="anchor-contact" class="w-full px-10 lg:px-[23vw] flex justify-center items-center gap-14 py-10 bg-2">
+
+        <div class="flex gap-2">
+            <i class="bi bi-telephone-fill"></i>
+            <p class="lighter-text text-xl notfancy">0424 887 055</p>
+        </div>
+        <div class="flex gap-2">
+            <i class="bi bi-envelope-fill"></i>
+            <p class="lighter-text text-xl notfancy">robert.tomas2000@gmail.com</p>
+        </div>
+    </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
