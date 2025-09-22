@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Stellar Dynamics | Next-Generation Aerospace Technology</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Leading the future of space exploration with revolutionary propulsion systems, orbital habitats, and interplanetary transport solutions.">
+        <meta name="author" content="Robert T">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="Stellar Dynamics | Pioneering Space Technology">
+        <meta property="og:description" content="Advanced aerospace engineering for humanity's expansion beyond Earth">
+        <meta property="og:image" content="images/stellar-dynamics-logo.jpg">
+
+        <script type="application/ld+json">
+            {
+                "@context":"https://schema.org",
+                "@type":"Organization",
+                "name":"Stellar Dynamics",
+                "description":"Next-Generation Aerospace Technology"
+            }
+        </script>
+
+        <script src="script.js" defer></script>
+        <link href="output.css" rel="stylesheet">
+        <!-- Bootsrap for icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="bg-1">
+
+        <a href="#main-content-start" class="skip-link">Skip to main content</a>
+
+        <!-- Main Nav -->
+        <nav id="main-nav" aria-label="Main navigation" class="sticky top-0 z-50 bg-1 px-6 lg:px-6 2xl:px-14 border-b border-stone-800 h-[80px]  flex justify-between items-center transition-colors duration-150   xl:justify-start">
+            <a href="#">
+                <img src="images/stellar-dynamics-logo.jpg"
+                alt="Stellar dynamics logo"
+                loading="eager"
+                decoding="async"
+                class="w-[150px] 2xl:w-[200px]">
+            </a>
+
+
+            <i id="hamberger-icon" aria-label="Open navigation" class="bi bi-grid  text-3xl cursor-pointer    xl:hidden"></i>
+            
+            <ul class="heading hidden text-lg font-medium xl:flex xl:items-center gap-10 ml-10">
+                <li class="hidden 2xl:block">
+                    <div class="relative">
+                        <div class="group">
+                            <a href="#" class="block py-6">HOME</a>
+                            <div>
+                                <div class="animate-red"></div>
+                                <div class="animate-orange"></div>
+                                <div class="animate-yellow"></div>
+                                <div class="animate-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative">
+                        <div class="group">
+                            <a href="#" class="block py-6">PROPULSION SYSTEMS</a>
+                            <div class="absolute left-[38%] right-[50%]">
+                                <div class="animate-red"></div>
+                                <div class="animate-orange"></div>
+                                <div class="animate-yellow"></div>
+                                <div class="animate-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative">
+                        <div class="group">
+                            <a href="#" class="block py-6">ORBITAL HABITATS</a>
+                            <div class="absolute left-[25%]">
+                                <div class="animate-red"></div>
+                                <div class="animate-orange"></div>
+                                <div class="animate-yellow"></div>
+                                <div class="animate-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative">
+                        <div class="group">
+                            <a href="#" class="block py-6">MISSIONS</a>
+                            <div class="absolute left-[4%]">
+                                <div class="animate-red"></div>
+                                <div class="animate-orange"></div>
+                                <div class="animate-yellow"></div>
+                                <div class="animate-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative">
+                        <div class="group">
+                            <a href="#" class="block py-6">RESEARCH</a>
+                            <div class="absolute left-[7%]">
+                                <div class="animate-red"></div>
+                                <div class="animate-orange"></div>
+                                <div class="animate-yellow"></div>
+                                <div class="animate-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="hidden xl:flex flex-col  gap-1 h-[50px]  ml-auto lg:flex-row w-[31vw]">
+                <a href="#" class="group relative btn border-2 border-stone-800 w-[50%]"> 
+                    <p class="group-hover:text-white transition-colors duration-150">PARTNER WITH US</p> 
+                    <div class="bg-white btn-animation"></div>
+                    <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                </a> 
+                <a href="#" class="group relative btn border-2 border-stone-800 w-[50%]"> 
+                    <p class="group-hover:text-white transition-colors duration-150">MISSION BRIEFINGS</p> 
+                    <div class="bg-[#D7AB61] btn-animation"></div>
+                    <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                </a> 
+            </div>
+        </nav>
+
+        <!-- Mobile hamberger menu -->
+        <nav id="mobile-nav" aria-label="Mobile navigation" class="xl:hidden z-50 blue h-[calc(100vh-80px)] w-full fixed top-[80px] translate-x-[350vw] flex flex-col justify-between transition-transform duration-150">
+            <ul>
+                <li class="mobile-nav-li">
+                    <a href="#" class="mobile-nav-link">
+                        <p>HOME</p>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a href="#" class="mobile-nav-link">
+                        <p>PROPULSION SYSTEMS</p>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a href="#" class="mobile-nav-link">
+                        <p>ORBITAL HABITATS</p>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a href="#" class="mobile-nav-link">
+                        <p>MISSIONS</p>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-li">
+                    <a href="#" class="mobile-nav-link">
+                        <p>RESEARCH</p>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="flex flex-col p-3 gap-3"> 
+                <a href="#" class="group relative btn border-4 border-white"> 
+                    <p class="group-hover:text-white transition-colors duration-150">PARTNER WITH US</p> 
+                    <div class="bg-white btn-animation"></div> 
+                </a> 
+                <a href="#" class="group relative btn border-4 border-[#D7AB61]"> 
+                    <p class="group-hover:text-white transition-colors duration-150">MISSION BRIEFINGS</p> 
+                    <div class="bg-[#D7AB61] btn-animation"></div> 
+                </a> 
+            </div>
+        </nav>
+
+
+        <!-- Header -->
+        <header>
+
+            <div id="header-slide-holder" class="flex overflow-y-scroll overflow-x-hidden remove-scroll-bar snap-x snap-mandatory">
+
+                <!-- Slide 1-->
+                <div id="header-slide-1" class="relative h-[70vh] snap-start">
+                    <picture class="bg-black w-[100vw] h-[70vh] block -z-50 absolute">
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="images/banner-001.jpg"
+                            alt="Spaceship in orbit of earth">
+                        <img
+                            src="images/mobile-banner-001.jpg"
+                            alt="Spaceship in orbit of earth"
+                            loading="eager"
+                            decoding="async"
+                            class="h-[70vh] min-h-[500px] object-cover mx-auto">
+                    </picture>
+
+                    <div class="h-full w-[100vw] lg:flex items-center justify-end pr-36">
+                        <div class="flex flex-col justify-end items-center gap-3 h-full w-[100vw] px-14 lg:h-fit lg:w-fit lg:gap-5">
+                    
+                            <img src="images/stellar-dynamics-logo-clear.png"
+                            alt="Stellar Dynamics logo"
+                            loading="eager"
+                            decoding="async"
+                            class="w-[600px] md:max-w-[500px]">
+
+                            <h1 class="heading text-3xl font-extrabold text-white lg:text-5xl lg:mt-10 text-center">ENGINEERING THE FUTURE</h1>
+                            <h2 class="hidden text-white text-2xl lg:block">Advanced Propulsion Systems Now Operational</h2>
+                            <div class="flex flex-col p-3 gap-3 w-[300px] lg:flex-row lg:w-[550px]">
+                                <a href="#" class="group relative btn border-4 border-white"> 
+                                    <p class="text-white transition-colors duration-150">TECHNOLOGY SHOWCASE</p> 
+                                    <div class="bg-[#090E15] btn-animation"></div>
+                                    <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                                </a> 
+                                <a href="#" class="group relative btn border-4 border-white"> 
+                                    <p class="group-hover:text-white transition-colors duration-150">VIEW MISSIONS</p> 
+                                    <div class="bg-white btn-animation"></div>
+                                    <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                                </a> 
+                            </div>
+                            <div class="bg-black w-full h-[10px] lg:hidden"></div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow to move right -->
+                    <i id="header-right-arrow"  class="bi bi-chevron-right  cursor-pointer text-5xl text-white/70 absolute top-[50%] right-[1vw]  hover:text-white/50 transition-colors duration-200"></i>
+                </div>
+
+                <!-- Slide 2-->
+                <div id="header-slide-1" class="relative h-[70vh] snap-start">
+                    <picture class="bg-black w-[100vw] h-[70vh] block -z-50 absolute">
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="images/banner-002.jpg"
+                            alt="Stellar Dynamics Ion Drive Technology close up">
+                        <img
+                            src="images/mobile-banner-002.jpg"
+                            alt="Stellar Dynamics Ion Drive Technology close up"
+                            loading="eager"
+                            decoding="async"
+                            class="h-[70vh] min-h-[500px] object-cover mx-auto">
+                    </picture>
+
+                    <div class="h-full w-[100vw] lg:flex items-center justify-end pr-36">
+                        <div class="flex flex-col justify-end items-center gap-3 h-full w-[100vw] px-14 lg:h-fit lg:w-fit lg:gap-5">
+                            <img src="images/stellar-dynamics-logo-clear.png"
+                            alt="Stellar Dynamic logo"
+                            loading="eager"
+                            decoding="async"
+                            class="w-[600px]">
+
+                            <h1 class="heading text-3xl font-extrabold text-white lg:text-5xl lg:mt-10">EXPANDING HORIZONS</h1>
+                            <h2 class="hidden text-white text-2xl lg:block">Revolutionary Ion Drive Technology</h2>
+                            <div class="flex flex-col p-3 gap-3 w-[300px] lg:flex-row lg:w-[550px]">
+                                <a href="#" class="group relative btn border-4 border-white"> 
+                                    <p class="text-white transition-colors duration-150">LEARN MORE</p> 
+                                    <div class="bg-[#090E15] btn-animation"></div>
+                                    <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                                </a> 
+                                <a href="#" class="group relative btn border-4 border-white"> 
+                                    <p class="group-hover:text-white transition-colors duration-150">VIEW MISSIONS</p> 
+                                    <div class="bg-white btn-animation"></div>
+                                    <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                                </a> 
+                            </div>
+                            <div class="bg-black w-full h-[10px] lg:hidden"></div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow to move right -->
+                    <i id="header-left-arrow"  class="bi bi-chevron-left  cursor-pointer text-5xl text-white/70 absolute top-[50%] left-[1vw]  hover:text-white/50 transition-colors duration-200"></i>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="flex justify-center gap-[3vw] py-3   absolute origin-center top-[-35px] left-[50vw] -translate-x-1/2 lg:top-[-70px]">
+                    <i id="left-circle" class="bi bi-circle-fill  cursor-pointer text-white text-xs lg:text-lg"></i>
+                    <i id="right-circle" class="bi bi-circle       cursor-pointer text-white text-xs lg:text-lg"></i>
+                </div>
+                <div class="bg-[#0D1321] w-[100vw] h-[13px] lg:h-[20px]"></div>
+                <div class="bg-[#1D2D44] w-[100vw] h-[13px] lg:h-[20px]"></div>
+                <div class="bg-[#3E5C76] w-[100vw] h-[13px] lg:h-[20px]"></div>
+                <div class="bg-[#EF5429] w-[100vw] h-[13px] lg:h-[20px]"></div>
+            </div>
+
+        </header>
+
+
+        
+        <main>
+            <!-- ABOUT STELLAR DYNAMICS -->
+            <div class="fade-in">
+                <div class="div-line mx-6 lg:mx-14 xl:mx-32 mar-top"></div>
+                <div class="px-6    lg:flex gap-32 lg:px-14 xl:px-32">
+                    <div>
+                        <h2 class="heading text-2xl font-bold py-5">ABOUT STELLAR DYNAMICS</h2>
+                        <p class="text-xl">Stellar Dynamics is the premier aerospace engineering company pioneering humanity's expansion beyond Earth. Founded by former NASA engineers and private space industry veterans, we specialize in next-generation propulsion systems, sustainable orbital habitats, and long-range interplanetary transport solutions. Our revolutionary ion drive technology and modular space architecture are already powering the next era of space exploration.</p>
+                    </div>
+                    <img 
+                    src="images/orion.png"
+                    alt="Drawing of orion constellation"
+                    loadgin="lazy"
+                    decoding="async"
+                    class="w-[220px] mt-6 mb-6 lg:pr-10 mx-auto">
+                </div>
+                <div class="div-line mx-6 lg:mx-14 xl:mx-32"></div>
+            </div>
+
+            <!-- FEATURED TECHNOLOGIES -->
+            <div class="fade-in bg-2 text-white mx-6 mar-top lg:mx-14 xl:mx-32 lg:p-6">
+                <div class="flex flex-col lg:flex-row gap-6 px-6">
+                    <div class="">
+                        <h3 class="heading font-semibold text-3xl pt-3">FEATURED TECHNOLOGIES</h3>
+                        <p class="pt-3 text-lg">From breakthrough propulsion innovations to self-sustaining orbital cities, our cutting-edge technologies are reshaping what's possible in space. Explore our latest developments in fusion-powered spacecraft, zero-gravity manufacturing, and terraforming systems. Each innovation brings us closer to making space truly accessible for all humanity.</p>
+                    </div>
+                    <div class=" flex flex-col md:flex-row md:min-w-[400px] mt-auto gap-3 md:gap-6">
+                        <a href="#" class="underline-link">EXPLORE TECHNOLOGIES</a>
+                        <a href="#" class="underline-link">PARTNER WITH US</a>
+                    </div>
+                </div>
+                
+                <!-- ITEMS PARENT -->
+                <div class="mar-top-small lg:flex *:flex-1 lg:items-stretch justify-center">
+                    <!-- MAIN FEATURED ITEM -->
+                    <a id="main-content-start" href="#" class="group">
+                        <picture class="relative block overflow-hidden border-2 h-full w-full">
+                            <img
+                                src="images/featured-001.jpg"
+                                alt="The artemis-x fusion ship flying in space"
+                                loading="lazy"
+                                decoding="async"
+                                class="object-cover lg:h-full group-hover:scale-115 transition-transform duration-300 min-h-[400px]">
+
+                            <div class="flex flex-col gap-6 absolute bottom-0 left-0 right-0  p-6 lg:px-10           bg-gradient-to-t from-[#0B192B] to-transparent ">
+                                <div>
+                                    <h4 class="heading text-2xl md:text-3xl font-bold   group-hover:opacity-90">ARTEMIS-X FUSION DRIVE SYSTEM</h4>
+                                    <p class="">By: Stellar Dynamics Propulsion Lab</p>
+                                </div>
+                                <div class="flex gap-5  lg:mb-6">
+                                    <p>Revolutionary fusion-powered propulsion system reducing Mars travel time to just 45 days while maintaining unprecedented fuel efficiency.</p>
+                                    <i class="bi bi-arrow-right-circle    text-5xl ml-auto group-hover:opacity-90"></i>
+                                </div>
+                            </div>
+                        </picture>
+                    </a>
+                    
+                    <!-- SECONDARY ITEMS PARENT-->
+                    <div class=" flex flex-col  *:flex-1">
+                        <!-- SECONDARY ITEM -->
+                        <a href="#" class="group flex flex-row items-center gap-3 border-2 px-6 py-4">
+                            <picture class="min-w-[100px] w-[100px] h-[100px] md:min-w-[150px] lg:min-w-[200px]   overflow-hidden">
+                                <img
+                                    src="images/featured-002.jpg"
+                                    alt="The Nova Orbital city in orbit"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                            </picture>
+                            <div>
+                                <h4 class="heading text-xl font-bold group-hover:opacity-80">NOVA ORBITAL CITY</h4>
+                                <p>By: Habitat Engineering Division</p>
+                            </div>
+                            <i class="bi bi-arrow-right-circle    text-2xl ml-auto group-hover:opacity-80"></i>
+                        </a>
+
+                        <!-- SECONDARY ITEM -->
+                        <a href="#" class="group flex flex-row items-center gap-3 border-2 px-6 py-4">
+                            <picture class="min-w-[100px] w-[100px] h-[100px] md:min-w-[150px] lg:min-w-[200px]   overflow-hidden">
+                                <img
+                                    src="images/featured-003.jpg"
+                                    alt="The helios solar array collecting energy"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                            </picture>
+                            <div>
+                                <h4 class="heading text-xl font-bold group-hover:opacity-80">HELIOS SOLAR COLLECTION ARRAY</h4>
+                                <p>By: Energy Systems Team</p>
+                            </div>
+                            <i class="bi bi-arrow-right-circle    text-2xl ml-auto group-hover:opacity-80"></i>
+                        </a>
+
+                        <!-- SECONDARY ITEM -->
+                        <a href="#" class="group flex flex-row items-center gap-3 border-2 px-6 py-4">
+                            <picture class="min-w-[100px] w-[100px] h-[100px] md:min-w-[150px] lg:min-w-[200px]   overflow-hidden">
+                                <img
+                                    src="images/featured-004.jpg"
+                                    alt="Image inside the atmospheric processor main chamber"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                            </picture>
+                            <div>
+                                <h4 class="heading text-xl font-bold group-hover:opacity-80">TITAN BASE ATMOSPHERIC PROCESSOR</h4>
+                                <p>By: Terraforming Research Lab</p>
+                            </div>
+                            <i class="bi bi-arrow-right-circle    text-2xl ml-auto group-hover:opacity-80"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ARTICLES -->
+            <div class="fade-in mar-top mx-6 lg:mx-14 xl:mx-32  grid lg:grid-rows-4 lg:grid-cols-3 gap-6">
+
+                <!-- Box 1 -->
+                <div class="fade-in lg:col-span-3">
+                    <a href="#" class="group block hover:bg-[#ffa48b] transition-colors duration-300 border hover:border-[#ffa48b] min-h-[38vh] lg:h-[50vh]    lg:flex">
+                    <div class="overflow-hidden md:h-[45vh] lg:h-[50vh]  lg:flex-2">
+                        <img
+                            src="images/article-001.jpg"
+                            alt="Successful fusion drive deep space test"
+                            loading="lazy"
+                            decoding="async"
+                            class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                    </div>
+                    <div class="pt-3 lg:pt-0 pl-5 mt-auto pb-10 flex flex-col md:gap-5 lg:gap-2 lg:flex-1">
+                        <p class="heading font-semibold text-xs tracking-widest">MISSION UPDATE</p>
+                        <p class="heading font-medium text-lg  lg:text-4xl">Stellar Dynamics Successfully Tests Fusion Drive in Deep Space</p>
+                        <p class="hidden lg:block lg:text-lg">First successful test of the Artemis-X fusion drive system completed during unmanned mission to asteroid belt.</p>
+                    </div>
+                </a>
+                </div>
+
+
+                <!-- Box 2 -->
+                <div class="fade-in lg:col-span-2">
+                    <a href="#" class="group block hover:bg-[#ffa48b] transition-colors duration-300 border hover:border-[#ffa48b] min-h-[38vh] lg:h-[50vh]    lg:flex *:flex-1">
+                    <div class="overflow-hidden md:h-[45vh] lg:h-[50vh] lg:flex-1">
+                        <img
+                            src="images/article-002.jpg"
+                            alt="Ion drive fuel in action"
+                            loading="lazy"
+                            decoding="async"
+                            class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                    </div>
+                    <div class="pt-3 lg:pt-0 pl-5 mt-auto pb-10 flex flex-col md:gap-5 lg:gap-2 lg:flex-1">
+                        <p class="heading font-semibold text-xs tracking-widest">TECHNOLOGY</p>
+                        <p class="heading font-medium text-lg    lg:text-4xl">Revolutionary Ion Drive Reduces Fuel Costs by 90%</p>
+                        <p class="hidden lg:block lg:text-lg">Latest generation ion propulsion system achieves record efficiency ratings while maintaining superior thrust capabilities.</p>
+                    </div>
+                </a>
+                </div>
+                
+
+                <!-- Box 3 -->
+                <div class="fade-in">
+                    <a href="#" class="group block hover:bg-[#ffa48b] transition-colors duration-300 border hover:border-[#ffa48b] min-h-[38vh] lg:h-[50vh]   ">
+                    <div class="overflow-hidden md:h-[35vh]">
+                        <img
+                            src="images/article-003.jpg"
+                            alt="Zero gravity manufactory plant in action"
+                            loading="lazy"
+                            decoding="async"
+                            class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                    </div>
+                    <div class="pt-3  pl-5 mt-auto pb-10 flex flex-col md:gap-5 lg:gap-2 lg:flex-1">
+                        <p class="heading font-semibold text-xs tracking-widest">RESEARCH</p>
+                        <p class="heading font-medium text-lg">Breakthrough in Zero-Gravity Manufacturing Announced - March 15, 2025</p>
+                    </div>
+                </a>
+                </div>
+                
+
+                <!-- Box 4 -->
+                <div class="fade-in">
+                    <a href="#" class="group block hover:bg-[#ffa48b] transition-colors duration-300 border hover:border-[#ffa48b] min-h-[38vh] lg:h-[50vh]">
+                    <div class="overflow-hidden md:h-[35vh]">
+                        <img
+                            src="images/article-004.jpg"
+                            alt="Abstract artwork of bubbles"
+                            loading="lazy"
+                            decoding="async"
+                            class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                    </div>
+                    <div class="pt-3  pl-5 mt-auto pb-10 flex flex-col md:gap-5 lg:gap-2 lg:flex-1">
+                        <p class="heading font-semibold text-xs tracking-widest">PARTNERSHIPS</p>
+                        <p class="heading font-medium text-lg">Stellar Dynamics Partners with International Space Coalition</p>
+                    </div>
+                </a>
+                </div>
+                
+
+                <!-- Box 5 -->
+                <div class="fade-in lg:col-span-2">
+                    <a href="#" class="group block hover:bg-[#ffa48b] transition-colors duration-300 border hover:border-[#ffa48b] min-h-[38vh] lg:h-[50vh]    lg:flex *:flex-1">
+                        <div class="overflow-hidden md:h-[45vh] lg:h-[50vh] lg:flex-1">
+                            <img
+                                src="images/article-005.jpg"
+                                alt="Artwork of the new orbital habitat design"
+                                loading="lazy"
+                                decoding="async"
+                                class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                        </div>
+                        <div class="pt-3 lg:pt-0 pl-5 mt-auto pb-10 flex flex-col md:gap-5 lg:gap-2 lg:flex-1">
+                            <p class="heading font-semibold text-xs tracking-widest">INNOVATION</p>
+                            <p class="heading font-medium text-lg    lg:text-4xl">Next-Generation Orbital Habitat Design Revealed</p>
+                            <p class="hidden lg:block lg:text-lg">Modular space city architecture capable of supporting 10,000 residents with full life support and recreational facilities.</p>
+                        </div>
+                    </a>
+                </div>
+                
+
+                <!-- Box 6 -->
+                <div class="fade-in lg:col-span-3">
+                    <a href="#" class="group block hover:bg-[#ffa48b] transition-colors duration-300 border hover:border-[#ffa48b] min-h-[38vh] lg:h-[50vh]    lg:flex">
+                        <div class="overflow-hidden md:h-[45vh] lg:h-[50vh]  lg:flex-2">
+                            <img
+                                src="images/article-006.jpg"
+                                alt="The prestigious aeorospace award"
+                                loading="lazy"
+                                decoding="async"
+                                class="object-cover w-full h-full group-hover:scale-115 transition-transform duration-300">
+                        </div>
+                        <div class="pt-3 lg:pt-0 pl-5 mt-auto pb-10 flex flex-col md:gap-5 lg:gap-2 lg:flex-1">
+                            <p class="heading font-semibold text-xs tracking-widest">COMPANY NEWS</p>
+                            <p class="heading font-medium text-lg   lg:text-4xl">STELLAR DYNAMICS WINS PRESTIGIOUS AEROSPACE INNOVATION AWARD</p>
+                            <p class="hidden lg:block lg:text-lg">Industry recognition for outstanding contributions to sustainable space technology and revolutionary propulsion systems development.</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+
+            <!-- JOIN THE FUTURE -->
+            <div class="fade-in">
+                <div class="mar-top   flex flex-col lg:flex-row gap-12 lg:gap-32 px-14 xl:px-72">
+                    <div class="order-last lg:order-first">
+                        <h2 class="heading text-2xl lg:text-6xl font-bold py-5 tracking-wide">JOIN THE<br class="hidden lg:block"> FUTURE</h2>
+                        <p class="text-xl">Be part of humanity's greatest adventure. Join our team of visionary engineers, scientists, and explorers as we build the technology that will carry our species to the stars. Apply today and help shape the future of space exploration.</p>
+                    
+                        <div class="flex flex-col py-4 w-full lg:flex-row lg:w-[550px]">
+                            <a href="#" class="group relative btn border-4 border-black"> 
+                                <p class="group-hover:text-white transition-colors duration-150">CAREERS & OPPORTUNITIES</p> 
+                                <div class="bg-1 btn-animation"></div>
+                                <div class="bg-[#2F4C79] w-full h-full absolute top-0 -z-50"></div>
+                            </a> 
+                        </div>
+                    </div>
+
+                    <img 
+                    src="images/join-us.png"
+                    alt="Silhouettes of people infront of the great moon door"
+                    loadgin="lazy"
+                    decoding="async"
+                    class="mx-auto lg:py-8 object-contain lg:pr-10 order-first lg:order-last lg:w-[450px] lg:h-[350px]">
+                </div>
+
+            </div>
+                <div class="bg-[#0D1321] w-[100vw] h-[13px] lg:h-[20px] mar-top"></div>
+                <div class="bg-[#1D2D44] w-[100vw] h-[13px] lg:h-[20px]"></div>
+                <div class="bg-[#3E5C76] w-[100vw] h-[13px] lg:h-[20px]"></div>
+                <div class="bg-[#FC440F] w-[100vw] h-[13px] lg:h-[20px]"></div>
+
+
+
+
+
+            <!-- Company Story -->
+            <div class="relative bg-2 text-white py-10 w-full">
+
+                <div class="fade-in flex flex-col gap-6 px-6">
+                    <div class="">
+                        <h3 class="heading font-semibold text-3xl text-center">THE JOURNEY TO THE STARS...</h3>
+                        <p class="pt-3 text-center md:text-lg">From early rocket experiments to fusion-powered interplanetary travel, trace the evolution of space technology and Stellar Dynamics' role in humanity's cosmic expansion.</p>
+                    </div>
+
+                    <div class="relative bg-2 text-white py-10 h-[55vh] w-full overflow-y-scroll remove-scroll-bar">
+
+                        <!-- Vertical line -->
+                        <div class="hidden lg:block absolute left-1/2 top-0 w-[4px] h-[2040px] bg-white transform -translate-x-1/2"></div>
+
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[15px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2050</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">First successful private fusion reactor test</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[115px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2055</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">Breakthrough in ion propulsion efficiency achieved</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[255px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2065</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Stellar Dynamics founded by aerospace veterans</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[315px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2068</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">First orbital manufacturing facility operational</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[415px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2073</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Mars colony transport system prototype completed</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[515px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2085</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">Fusion drive technology perfected for deep space</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[615px] flex flex-col lg:items-end    items-center lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2100</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">First permanent asteroid mining operation</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[715px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2106</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">Interplanetary transport network established</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[815px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2112</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Europa research station becomes operational</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[890px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2115</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">Titan atmospheric processing begins</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[1015px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2125</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">First generation ships launch toward Alpha Centauri</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[1115px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2130</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">Orbital city populations exceed 100,000</p>
+                        </div>
+                         <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[1245px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2137</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Breakthrough in faster-than-light research</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[1315px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2140</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">First interstellar probe reaches Proxima Centauri</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[1414px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2150</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Galactic expansion initiative launches</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[1525px] flex flex-col lg:items-start   items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2158</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">Multiple star systems under human exploration</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[1615px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2161</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Advanced AI assists in deep space navigation</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[1710px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2170</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">First successful faster-than-light communication test</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class=" lg:absolute left-[9.5%] top-[1785px] flex flex-col lg:items-end    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2174</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Wormhole technology enters testing phase</p>
+                        </div>
+                        <!-- Date R-->
+                        <div class=" lg:absolute right-[9.5%] top-[1935px] flex flex-col lg:items-start    items-center  lg:w-[40vw] mb-6 md:mb-12">
+                            <div class="flex items-center gap-5">
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2190</p>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-left">First Wormhole powered system enters the market</p>
+                        </div>
+                        <!-- Date L -->
+                        <div class="lg:absolute left-[9.5%] top-[2015px] flex flex-col lg:items-end   items-center  lg:w-[40vw]">
+                            <div class="flex items-center gap-5">
+                                <p class="text-[#0B192B] bg-white w-fit px-2 py-0.5 rounded-lg text-3xl font-bold heading tracking-wider">2200</p>
+                                <i class="bi bi-hexagon-fill text-2xl hidden lg:block "></i>
+                            </div>
+                            <p class="px-8 mr-3 mt-2 text-center lg:text-right">Humanity becomes a true spacefaring civilization</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+
+
+        <footer class="bg-[#1D1D1D]">
+
+            <!-- Normal footer links -->
+            <div class="hidden py-12 md:flex justify-evenly">
+                <div>
+                    <h5 class="heading text-white">EXPLORE</h5>
+                    <div class="bg-[#303030] h-[2px] w-full"></div>
+                    <ul class="mt-3 space-y-3 flex flex-col lg:flex-row lg:gap-6">
+                        <div class="mt-3 space-y-3">
+                           <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Home</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">technologies</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">habitats</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">research</a></li> 
+                        </div>
+                        <div class="mt-3 space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Missions</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Innovation Lab</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Space Academy</a></li>
+                        </div>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="heading text-white">SUPPORT</h5>
+                    <div class="bg-[#303030] h-[2px] w-full"></div>
+                    <ul class="mt-3 space-y-3 flex flex-col lg:flex-row lg:gap-6">
+                        <div class="mt-3 space-y-3">
+                           <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Mission Control</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Technical Documentation</a></li> 
+                        </div>
+                    
+                        <div class="mt-3 space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Status</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="heading text-white">CORPORATE</h5>
+                    <div class="bg-[#303030] h-[2px] w-full"></div>
+                    <ul class="mt-3 space-y-3 flex flex-col lg:flex-row lg:gap-6">
+                        <div class="mt-3 space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Privacy Policy</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Terms of Service</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">End User License Agreements</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Legal Information</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Cookie Policy</a></li>   
+                        </div>
+                        <div class="mt-3 space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Cookie Preferences</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Code of Conduct</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Contact</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Investors</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Careers</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hamberger footer links -->
+            <div class="p-8 md:hidden">
+                <div id="accordion-head-1" aria-expanded="false" class="flex justify-between cursor-pointer py-5">
+                    <div class="text-white heading">EXPLORE</div>
+                    <i class="bi bi-chevron-down   text-white"></i>
+                </div>
+                <div id="accordion-content-1" class="overflow-hidden h-0 transition-[height] duration-200">
+                    <ul class="text-center mt-3 space-y-3 flex flex-col lg:flex-row lg:gap-6">
+                        <div class="mt-3 space-y-3">
+                         <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Home</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Technologies</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Habitats</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Research</a></li> 
+                        </div>
+                        <div class="space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Missions</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Innovation Lab</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Space Academy</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="my-2 bg-[#303030] h-[2px] w-full"></div>
+
+                <div id="accordion-head-2" aria-expanded="false" class="flex justify-between cursor-pointer py-5">
+                    <div class="text-white heading">SUPPORT</div>
+                    <i class="bi bi-chevron-down   text-white"></i>
+                </div>
+                <div id="accordion-content-2" class="overflow-hidden h-0 transition-[height] duration-200">
+                    <ul class="text-center mt-3 space-y-3 flex flex-col lg:flex-row lg:gap-6">
+                        <div class="mt-3 space-y-3">
+                           <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Support Center</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Technical Deocumentation</a></li> 
+                        </div>
+                    
+                        <div class="space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Status</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="my-2 bg-[#303030] h-[2px] w-full"></div>
+
+
+                <div id="accordion-head-3" aria-expanded="false" class="flex justify-between cursor-pointer py-5">
+                    <div class="text-white heading">LEGAL</div>
+                    <i class="bi bi-chevron-down   text-white"></i>
+                </div>
+                <div id="accordion-content-3" class="overflow-hidden h-0 transition-[height] duration-200">
+                    <ul class="text-center mt-3 space-y-3 flex flex-col lg:flex-row lg:gap-6">
+                        <div class="mt-3 space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Privacy Policy</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Terms of Service</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">End User License Agreements</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Legal Information</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Cookie Policy</a></li>   
+                        </div>
+                        <div class="space-y-3">
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Cookie Preferences</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Code of Conduct</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Contact</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Investors</a></li>
+                            <li class="text-[#bbbbbb] hover:text-[#dedede]"><a href="#">Careers</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="my-2 bg-[#303030] h-[2px] w-full"></div>
+            </div>
+
+            <p class="pb-6 text-sm text-white text-center">© 2025 Stellar Dynamics. All rights reserved.</p>
+            
+        </footer>
+
+    </body>
+</html>
