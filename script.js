@@ -6,7 +6,6 @@ hamIcon.addEventListener("click", ()=> {
     mobileNav.classList.toggle("-translate-y-[250px]");
     mobileNav.classList.toggle("translate-y-[80px]");
 
-    // Rotate
-    hamIcon.classList.toggle("rotate-90");
+    console.log("wow");
 });
 
