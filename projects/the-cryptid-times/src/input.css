@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+
+@layer components {
+
+    .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 10px;
+        background: #000;           
+        color: #fff;              
+        padding: 10px 16px;         
+        text-decoration: none;    
+        z-index: 1000;            
+    }
+    .skip-link:focus {
+        top: 10px;
+    }
+
+
+
+    body {
+        font-family: "Oxanium", sans-serif;
+    }
+    .bg-light {
+        background-color: #d0d5d0;
+        color: #1c201c;
+    }
+    .bg-dark {
+        background-color: #1c201c;
+        color: #d0d5d0;
+    }
+    .text-dark {
+        color: #1c201c;
+    }
+    .text-light {
+        color: #d0d5d0;
+    }
+    .green-text {
+        color: #5cb965;
+    }
+
+    .secondary-image {
+        animation: imageAppear 0.2s linear;
+    }
+    @keyframes imageAppear {
+        0%{height: 0;}
+        100%{height: 100%;}
+    }
+
+
+
+    .nav-link {
+        @apply hidden font-semibold px-2 py-[22px]       xl:flex items-center justify-center;
+    }
+    .nav-underline {
+        @apply absolute bottom-[-1px]  h-[6px] xl:h-[4px] group-hover:w-full w-0 bg-green-600  transition-[width] duration-500;
+    }
+
+    .hamb-nav-link {
+        @apply w-full flex justify-center border border-stone-400 dark:border-stone-600
+    }
+    .hamb-nav-button-text {
+        @apply tracking-wide border border-stone-800 dark:border-white rounded-4xl py-4 px-8 text-center
+    }
+
+
+}
+

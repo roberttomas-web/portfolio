@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>The Cryptid Times | Monsters, Myths & Mayhem</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Stay up to date with the latest unbelievable headlines, hoaxes, and reports from the world of cryptids. The only news source brave enough to cover the truth about Bigfoot, Mothman, and other legendary creatures.">
+        <meta name="author" content="Robert T">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="The Cryptid Times | Monsters, Myths & Mayhem">
+        <meta property="og:description" content="Stay up to date with the latest unbelievable headlines, hoaxes, and reports from the world of cryptids. The only news source brave enough to cover the truth about Bigfoot, Mothman, and other legendary creatures.">
+        <meta property="og:image" content="images/logo-light.webp">
+
+        <script type="application/ld+json">
+            {
+                "@context":"https://schema.org",
+                "@type":"NewsMediaOrganization",
+                "name":"The Cryptid Times",
+                "description":"Latest cryptid sightings and paranormal investigations"
+            }
+        </script>
+
+        <script src="script.js" defer></script>
+        <link href="output.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <!-- G Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="bg-stone-300 dark:bg-stone-800 dark:text-white">
+
+        <!-- Skip to main content button -->
+        <a href="#main" class="skip-link">Skip to main content</a>
+
+        <!-- Nav -->
+        <nav id="nav" class="sticky top-0 bg-stone-300 dark:bg-stone-800 border border-stone-600     w-full h-[8vh] min-h-[70px] px-12 flex justify-between items-center z-50  transition-[height] duration-600 overflow-hidden">
+            <div>
+                <a href="index.html">
+                    <img id="nav-logo" src="images/logo-light.webp"
+                        srcset="images/logo-light.webp 1x, images/logo-light-2x.webp 2x"
+                        class="w-[90px] block dark:hidden"
+                        alt="The Cryptid Times Logo" loading="eager"
+                        decoding="async">
+                </a>
+                <a href="index.html">
+                    <img id="nav-logo" src="images/logo-dark.webp"
+                        srcset="images/logo-dark.webp 1x, images/logo-dark-2x.webp 2x"
+                        class="w-[90px] hidden dark:block"
+                        alt="The Cryptid Times Logo" loading="eager"
+                        decoding="async">
+                </a>
+            </div>
+            <i id="hamberger-icon" class="bi bi-list  text-2xl cursor-pointer    xl:hidden"></i>
+            
+            <div class="flex absolute w-fit gap-7 -right-[50%] -left-[50%] mx-auto">
+                <div class="group relative flex flex-col">
+                    <a href="#" class="nav-link">Home</a>
+                    <span class="nav-underline"></span>
+                </div>
+                <div class="group relative flex flex-col">
+                    <a href="#" class="nav-link" tabindex="-1">Latest Sightings</a>
+                    <span class="nav-underline"></span>
+                </div>
+                <div class="group relative flex flex-col">
+                    <a href="#" class="nav-link">Cryptid Profiles</a>
+                    <span class="nav-underline"></span>
+                </div>
+                <div class="group relative flex flex-col">
+                    <a href="#" class="nav-link">Evidence & Hoaxes</a>
+                    <span class="nav-underline"></span>
+                </div>
+                <div class="group relative flex flex-col">
+                    <a href="#" class="nav-link">Field Reports</a>
+                    <span class="nav-underline"></span>
+                </div>
+                <div class="group relative flex flex-col">
+                    <a href="#" class="nav-link">Submit A Sighting</a>
+                    <span class="nav-underline"></span>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Hamberger nav menu (start closed) -->
+        <div id="mobile-hamberger-menu"
+            class="z-50 fixed bg-stone-300 dark:bg-stone-800 overflow-scroll w-0 h-full flex flex-col  transition-[width] ease-[cubic-bezier(.91,.23,.28,1)]  duration-700   xl:hidden">
+
+            <div
+                class="w-full flex justify-center py-8 border border-stone-800">
+                <input type="search" placeholder="Search"
+                    class="outline-0 border border-stone-400 h-[6vh] w-[70vw] pl-2">
+                <button type="submit"
+                    class="bg-stone-900  h-[6vh] aspect-square -ml-2 cursor-pointer">
+                    <i class="bi bi-search   text-white"></i>
+                </button>
+            </div>
+
+            <div class="hamb-nav-link">
+                <a href="#" class="p-8 py-7">
+                    <h3 class="tracking-wider font-medium">Home</h3>
+                </a>
+            </div>
+            <div class="hamb-nav-link">
+                <a href="#" class="p-8 py-7">
+                    <h3 class="tracking-wider font-medium">Latest Sightings</h3>
+                </a>
+            </div>
+            <div class="hamb-nav-link">
+                <a href="#" class="p-8 py-7">
+                    <h3 class="tracking-wider font-medium">Cryptid Profiles</h3>
+                </a>
+            </div>
+            <div class="hamb-nav-link">
+                <a href="#" class="p-8 py-7">
+                    <h3 class="tracking-wider font-medium">Evidence &
+                        Hoaxes</h3>
+                </a>
+            </div>
+            <div class="hamb-nav-link">
+                <a href="#" class="p-8 py-7">
+                    <h3 class="tracking-wider font-medium">Field Reports</h3>
+                </a>
+            </div>
+            <div class="flex justify-center mx-4">
+                <div class="w-fit flex justify-center py-8">
+                    <a href="#">
+                        <h3 class="hamb-nav-button-text"> SUBMIT A SIGHTING</h3>
+                    </a>
+                </div>
+                <div class="w-fit flex justify-center py-8">
+                    <a href="#">
+                        <h3 class="hamb-nav-button-text"> BE A SUPPORTER</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="w-full flex flex-wrap justify-center gap-5 px-6 py-5 mb-20 border border-stone-600">
+                <a href="#">
+                    <h4 class="text-sm font-semibold">About Us</h4>
+                </a>
+                <a href="#">
+                    <h4 class="text-sm font-semibold">Contact Us</h4>
+                </a><a href="#">
+                    <h4 class="text-sm font-semibold">Be A Supporter</h4>
+                </a>
+                <a href="#">
+                    <h4 class="text-sm font-semibold">Privacy Policy</h4>
+                </a>
+                <a href="#">
+                    <h4 class="text-sm font-semibold">Terms of Service</h4>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main article -->
+        <div id="main-and-secondary-articles-and-news-in-brief-section"
+            class="min-h-[100vh]   xl:flex">
+            <div id="main-and-secondary-articles" class="flex flex-col flex-1">
+                <div class="group relative bg-[url(images/massive-shadow-over-lake.webp)] h-[50vh] bg-cover bg-center  lg:h-[65vh]">
+                    <div class="group-hover:translate-y-150 group-hover:h-30 w-full h-0 transition-[height] transition-transform duration-1000 blur-sm bg-white/3">
+                    </div>
+                    <div class="group-hover:translate-y-150 group-hover:h-10 w-full h-0 transition-[height] transition-transform duration-800 blur-sm bg-white/3">
+                    </div>
+
+                    <a href="#" id="main">
+                        <div class="absolute bottom-0 left-0 w-full flex text-white">
+                            <div class="bg-stone-900/60 flex-1 p-6 pl-12 flex flex-col gap-2   lg:py-20">
+                                <p class="tracking-wider text-sm  lg:text-base">09 AUGUST 2025</p>
+                                <h3 class="text-xl md:text-2xl font-bold   lg:text-4xl">Massive Shadow Over Lake Sparks Frenzy in Quiet Town
+                                </h3>
+                                <p class="lg:text-lg">Residents report eerie noises and strange ripples. Experts divided on whether it’s a hoax, rare animal, or the supernatural.</p>
+                            </div>
+                            <div class="bg-stone-900/60 w-10 md:w-32 flex justify-center items-center p-6 ml-[2px]">
+                                <i class="bi bi-chevron-right text-xl md:text-3xl"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Secondary articles -->
+                <div class="md:flex flex-1">
+                    <a href="#">
+                        <div
+                            class="group  flex flex-col flex-1 relative border bg-stone-300 dark:bg-stone-800 border-stone-400 dark:border-stone-600 hover:border-stone-900 dark:hover:border-stone-600 transition-colors duration-300 h-full">
+                            <div
+                                class="group-hover:h-full bg-stone-900 dark:bg-blue-600 h-0 w-full absolute bottom-0 bg-center transition-[height] duration-500">
+                            </div>
+                            <div
+                                class="group-hover:text-white relative transition-colors duration-500 p-12 flex flex-col gap-5">
+                                <p class="tracking-wider text-sm opacity-70">13
+                                    AUGUST 2025</p>
+                                <h3 class="text-xl font-bold">Giant Footprints
+                                    Discovered in Snow Outside Remote Mountain
+                                    Cabin</h3>
+                                <p>Hikers stumbled upon enormous tracks, leading
+                                    deep into the forest—too large for any
+                                    known animal, raising whispers of Bigfoot’s
+                                    return.</p>
+                            </div>
+                            <div
+                                class="relative flex items-center gap-4 px-12 pb-4">
+                                <h4
+                                    class="tracking-wider font-medium group-hover:text-green-600 dark:group-hover:text-white transition-colors duration-300 dark:text-green-400">
+                                    READ MORE</h4>
+                                <i
+                                    class="bi bi-arrow-right-short text-2xl text-green-600 dark:group-hover:text-white text-shadow-lg transition-colors duration-300"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="group  flex flex-col flex-1 relative border bg-stone-300 dark:bg-stone-800 border-stone-400 dark:border-stone-600 hover:border-stone-900 dark:hover:border-stone-600 transition-colors duration-300 h-full">
+                            <div
+                                class="group-hover:h-full bg-stone-900 dark:bg-blue-600 h-0 w-full absolute bottom-0 bg-center transition-[height] duration-500">
+                            </div>
+                            <div
+                                class="group-hover:text-white relative transition-colors duration-500 p-12  flex flex-col gap-5">
+                                <p class="tracking-wider text-sm opacity-70">12
+                                    AUGUST 2025</p>
+                                <h3 class="text-xl font-bold">Chupacabra Prefers
+                                    Nighttime Snacks Over Daylight Feasts,
+                                    Study Finds
+                                </h3>
+                                <p>Researchers observed the elusive Chupacabra
+                                    favoring goats’ midnight snacks, showing
+                                    surprising picky eating habits and
+                                    occasionally ignoring larger livestock
+                                    entirely.</p>
+                            </div>
+                            <div
+                                class="relative flex items-center gap-4 px-12 pb-4">
+                                <h4
+                                    class="tracking-wider font-medium group-hover:text-green-600 dark:group-hover:text-white transition-colors duration-300 dark:text-green-400">
+                                    READ MORE</h4>
+                                <i
+                                    class="bi bi-arrow-right-short text-2xl text-green-600 dark:group-hover:text-white text-shadow-lg transition-colors duration-300"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- News in brief-->
+            <div id="news-in-brief-section" class=" flex flex-col  xl:w-[35vw]">
+                <div
+                    class="w-full flex justify-center border border-stone-400 dark:border-stone-600   xl:justify-start">
+                    <h3 class="tracking-wider text-3xl p-12">NEWS IN BRIEF</h3>
+                </div>
+                <div class="flex flex-col flex-1">
+                    <div
+                        class="border border-stone-400 dark:border-stone-600 py-8 px-12 flex flex-col flex-1">
+                        <p
+                            class="tracking-wider text-sm pb-3 text-black/70 dark:text-stone-400">09
+                            AUGUST 2025</p>
+                        <p>Squatch Spotted Using Tree Branches to Scratch Back,
+                            Suggesting Advanced Grooming Habits and
+                            Social Play Among Bigfoot Populations</p>
+                    </div>
+                    <div
+                        class="border border-stone-400 dark:border-stone-600 py-8 px-12 flex flex-col flex-1">
+                        <p
+                            class="tracking-wider text-sm pb-3 text-black/70 dark:text-stone-400">08
+                            AUGUST 2025</p>
+                        <p>Mothman Reportedly Attracted to Streetlights in Small
+                            Towns, Possibly Explaining Increased
+                            Nighttime Sightings and Local Curiosity</p>
+                    </div>
+                    <div
+                        class="border border-stone-400 dark:border-stone-600 py-8 px-12 flex flex-col flex-1">
+                        <p
+                            class="tracking-wider text-sm pb-3 text-black/70 dark:text-stone-400">08
+                            AUGUST 2025</p>
+                        <p>Thunderbird Seen Soaring Over Valley, Scientists
+                            Document Flight Patterns Suggesting Unusual Wing
+                            Span and Exceptional Aerial Agility</p>
+                    </div>
+                    <div
+                        class="border border-stone-400 dark:border-stone-600 py-8 px-12 flex flex-col flex-1">
+                        <p
+                            class="tracking-wider text-sm pb-3 text-black/70 dark:text-stone-400">07
+                            AUGUST 2025</p>
+                        <p>Lake Wyrm Observed Surfacing Calmly, Occasionally
+                            Blowing Bubbles, Indicating Playful Behavior
+                            Rather Than Aggressive Predation</p>
+                    </div>
+                    <div
+                        class="border border-stone-400 dark:border-stone-600 py-8 px-12 flex flex-col flex-1">
+                        <p
+                            class="tracking-wider text-sm pb-3 text-black/70 dark:text-stone-400">06
+                            AUGUST 2025</p>
+                        <p>Jersey Devil Enjoys Rolling in Mud After Rain,
+                            Possibly a Thermoregulation Technique or Just
+                            Mischievous Creature Behavior</p>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full flex justify-center border bg-stone-300 dark:bg-stone-800 border-stone-400 dark:border-stone-600 py-8 px-12   xl:justify-start">
+                    <a href="#">
+                        <div class="flex gap-4 items-center">
+                            <h3
+                                class="tracking-wider text-lg dark:text-green-400">VIEW
+                                ALL NEWS</h3>
+                            <i
+                                class="bi bi-arrow-right-short text-3xl text-green-400 text-shadow-lg"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scientific Articles -->
+        <div
+            class="text-center xl:text-left border border-stone-400 dark:border-stone-600">
+            <h3 class="tracking-wider text-3xl p-12">Scientific Articles</h3>
+        </div>
+
+        <div id="slide-holder" class="h-[50vh] flex overflow-scroll snap-x snap-mandatory">
+
+            <!-- Slide 1 type 1-->
+            <!-- 1st Image -->
+            <a href="#" class="group relative bg-[url(images/cryptid-cuisine.webp)] bg-cover min-w-[70vw] w-[70vw] h-full bg-center overflow-hidden snap-start   xl:min-w-[45vw] xl:w-[45vw]">
+
+                <div class="absolute top-0 left-0 bg-stone-900/60 transition-colors duration-500 w-full h-full p-12">
+                    <p class="text-xs text-stone-400 tracking-widest z-40">#FEATURE</p>
+
+                    <div class="group-hover:h-[100%] h-[100%] md:h-[60%] absolute bottom-0 left-0 bg-stone-900 dark:bg-blue-600 flex flex-col gap-3 p-12 pt-5 transition-[height] duration-500">
+                        <!-- 2nd Image -->
+                        <div class="opacity-18">
+                            <div
+                                class=" group-hover:scale-110 select-none transition-transform duration-600 bg-[url(images/cryptid-cuisine.webp)] w-full h-full scale-x-50 scale-y-0 absolute bottom-0 left-0 bg-center bg-cover origin-bottom">
+                            </div>
+                        </div>
+                        <p class="text-stone-400 dark:text-white tracking-widest text-xs z-20">10&ensp;AUGUST&ensp;2025</p>
+                        <h4 class="h-[full] md:h-[100px]  group-hover:overflow-visible md:overflow-hidden text-white text-lg md:text-xl font-semibold z-20 "> Cryptid Cuisine: Understanding Feeding Patterns from Chupacabras to Lake Wyrms and Their Role in Local Ecosystems</h4>
+                        <span class="text-white -my-4 -mb-3 group-hover:hidden hidden md:block xl:hidden">...</span>
+                        <div class="h-[90px] xl:h-[75px]  group-hover:h-full text-pretty overflow-ellipsis  group-hover:pr-0 overflow-hidden ">
+                            <p class="text-white z-20 hidden md:block">Researchers
+                                explore cryptid diets from Chupacabras to
+                                Lake Wyrms, uncovering unexpected preferences,
+                                seasonal variations, and ecological impacts,
+                                shedding light on how these creatures
+                                influence-and coexist with the environments they
+                                inhabit.</p>
+                        </div>
+                        <span class="text-white -my-4 -mb-3 group-hover:hidden hidden md:block xl:hidden">...</span>
+                        <div class="flex items-center gap-4 mt-auto">
+                            <h4 class="text-white tracking-wider font-medium group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"> READ MORE</h4>
+                            <i class="bi bi-arrow-right-short text-2xl text-white group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Slide 2 type 2-->
+            <!-- 1st Image -->
+            <a href="#"
+                class="group relative bg-[url(images/jersey-devil-dna-analysis.webp)] bg-cover min-w-[70vw] w-[70vw] h-full bg-center overflow-hidden snap-start   xl:min-w-[45vw] xl:w-[45vw]">
+                <!-- 2nd Image -->
+                <div
+                    class="group-hover:scale-110 transition-transform duration-500 bg-[url(images/jersey-devil-dna-analysis.webp)] w-full h-full scale-x-50 scale-y-0 absolute bottom-0 bg-center bg-cover origin-bottom">
+                </div>
+
+                <div
+                    class="absolute top-0 left-0 bg-stone-900/60 group-hover:bg-stone-900/40 transition-colors duration-500 w-full h-full p-12 flex flex-col gap-4">
+                    <p
+                        class="text-xs text-stone-400 tracking-widest">#REVIEW&emsp;#RECOMMENDED</p>
+                    <h4
+                        class="text-white text-lg md:text-xl font-semibold">Jersey
+                        Devil DNA Analysis: What Recent Samples
+                        Reveal About Its Origins and Evolutionary History</h4>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <h4
+                            class="text-white text- tracking-wider font-medium group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300">
+                            READ MORE</h4>
+                        <i
+                            class="bi bi-arrow-right-short text-2xl text-white group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Slide 3 type 1-->
+            <!-- 1st Image -->
+            <a href="#"
+                class="group relative bg-[url(images/mothman-through-the-decades.webp)] bg-cover min-w-[70vw] w-[70vw] h-full bg-center overflow-hidden snap-start   xl:min-w-[45vw] xl:w-[45vw]">
+
+                <div
+                    class="absolute top-0 left-0 bg-stone-900/60 transition-colors duration-500 w-full h-full p-12">
+                    <p
+                        class="text-xs text-stone-400 tracking-widest z-40">#FEATURE</p>
+
+                    <div
+                        class="group-hover:h-[100%] h-[100%] md:h-[60%] absolute bottom-0 left-0 bg-stone-900 dark:bg-blue-600 flex flex-col gap-3 p-12 pt-5 transition-[height] duration-500">
+                        <!-- 2nd Image -->
+                        <div class="opacity-18">
+                            <div
+                                class="group-hover:scale-110 select-none transition-transform duration-600 bg-[url(images/mothman-through-the-decades.webp)] w-full h-full scale-x-50 scale-y-0 absolute bottom-0 left-0 bg-center bg-cover origin-bottom">
+                            </div>
+                        </div>
+                        <p
+                            class="text-stone-400 dark:text-white tracking-widest text-xs z-20">04&ensp;AUGUST&ensp;2025</p>
+                        <h4
+                            class="h-[full] md:h-[100px]  group-hover:overflow-visible md:overflow-hidden text-white text-lg md:text-xl font-semibold z-20 ">
+                            Mothman Through the Decades: Tracking Patterns,
+                            Cultural Impact, and Modern Sightings Across the
+                            Country</h4>
+                        <span
+                            class="text-white -my-4 -mb-3 group-hover:hidden hidden md:block xl:hidden">...</span>
+                        <div
+                            class="h-[90px] xl:h-[75px]  group-hover:h-full text-pretty overflow-ellipsis  group-hover:pr-0 overflow-hidden ">
+                            <p class="text-white hidden md:block">Decades of
+                                sightings reveal evolving Mothman behavior,
+                                regional patterns, and its impact on folklore.
+                                Experts analyze photos, witness reports, and
+                                cultural references to understand both creature
+                                and legend today.</p>
+                        </div>
+                        <span
+                            class="text-white -my-4 -mb-3 group-hover:hidden hidden md:block xl:hidden">...</span>
+                        <div class="flex items-center gap-4 mt-auto">
+                            <h4
+                                class="text-white tracking-wider font-medium group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300">
+                                READ MORE</h4>
+                            <i
+                                class="bi bi-arrow-right-short text-2xl text-white group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+
+            <!-- Slide 4 type 2-->
+            <!-- 1st Image -->
+            <a href="#"
+                class="group relative bg-[url(images/the-secret-world-of-lake-monsters.webp)] bg-cover min-w-[70vw] w-[70vw] h-full bg-center overflow-hidden snap-start   xl:min-w-[45vw] xl:w-[45vw]">
+                <!-- 2nd Image -->
+                <div
+                    class="group-hover:scale-110 transition-transform duration-500 bg-[url(images/the-secret-world-of-lake-monsters.webp)] w-full h-full scale-x-50 scale-y-0 absolute bottom-0 bg-center bg-cover origin-bottom">
+                </div>
+
+                <div
+                    class="absolute top-0 left-0 bg-stone-900/60 group-hover:bg-stone-900/40 transition-colors duration-500 w-full h-full p-12 flex flex-col gap-4">
+                    <p
+                        class="text-xs text-stone-400 tracking-widest">#REVIEW&emsp;#NOTRECOMMENDED</p>
+                    <h4 class="text-white text-lg md:text-xl font-semibold">The
+                        Secret World of Lake Monsters: How
+                        Researchers Study Elusive Aquatic Cryptids Safely and
+                        Effectively</h4>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <h4
+                            class="text-white text- tracking-wider font-medium group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300">
+                            READ MORE</h4>
+                        <i
+                            class="bi bi-arrow-right-short text-2xl text-white group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Slide 5 type 1-->
+            <!-- 1st Image -->
+            <a href="#"
+                class="group relative bg-[url(images/inside-the-hidden-lives-of-bigfoot.webp)] bg-cover min-w-[70vw] w-[70vw] h-full bg-center overflow-hidden snap-start   xl:min-w-[45vw] xl:w-[45vw]">
+
+                <div
+                    class="absolute top-0 left-0 bg-stone-900/60 transition-colors duration-500 w-full h-full p-12">
+                    <p
+                        class="text-xs text-stone-400 tracking-widest z-40">#FEATURE</p>
+
+                    <div
+                        class="group-hover:h-[100%] h-[100%] md:h-[60%] absolute bottom-0 left-0 bg-stone-900 dark:bg-blue-600 flex flex-col gap-3 p-12 pt-5 transition-[height] duration-500">
+                        <!-- 2nd Image -->
+                        <div class="opacity-18">
+                            <div
+                                class="group-hover:scale-110 select-none transition-transform duration-600 bg-[url(images/inside-the-hidden-lives-of-bigfoot.webp)] w-full h-full scale-x-50 scale-y-0 absolute bottom-0 left-0 bg-center bg-cover origin-bottom">
+                            </div>
+                        </div>
+                        <p
+                            class="text-stone-400 dark:text-white tracking-widest text-xs z-20">28&ensp;July&ensp;2025</p>
+                        <h4
+                            class="h-[full] md:h-[100px]  group-hover:overflow-visible md:overflow-hidden text-white text-lg md:text-xl font-semibold z-20 ">
+                            Inside the Hidden Lives of Bigfoot: New Research
+                            Sheds Light on Social Structures and Habits
+                        </h4>
+                        <span
+                            class="text-white -my-4 -mb-3 group-hover:hidden hidden md:block  xl:hidden">...</span>
+                        <div
+                            class="h-[90px] xl:h-[75px]  group-hover:h-full text-pretty overflow-ellipsis  group-hover:pr-0 overflow-hidden ">
+                            <p class="text-white  hidden md:block">Recent field
+                                studies reveal surprising social behaviors
+                                among Bigfoot communities, including coordinated
+                                foraging, playful interactions, and family
+                                dynamics—challenging old assumptions and
+                                offering unprecedented insight into the species’
+                                daily lives.</p>
+                        </div>
+                        <span
+                            class="text-white -my-4 -mb-3 group-hover:hidden hidden md:block  xl:hidden">...</span>
+                        <div class="flex items-center gap-4 mt-auto">
+                            <h4
+                                class="text-white tracking-wider font-medium group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300">
+                                READ MORE</h4>
+                            <i
+                                class="bi bi-arrow-right-short text-2xl text-white group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+            <!-- Slide 6 type 2-->
+            <!-- 1st Image -->
+            <a href="#"
+                class="group relative bg-[url(images/from-folklore-to-fact.webp)] bg-cover min-w-[70vw] w-[70vw] h-full bg-center overflow-hidden snap-start   xl:min-w-[45vw] xl:w-[45vw]">
+                <!-- 2nd Image -->
+                <div
+                    class="group-hover:scale-110 transition-transform duration-500 bg-[url(images/from-folklore-to-fact.webp)] w-full h-full scale-x-50 scale-y-0 absolute bottom-0 bg-center bg-cover origin-bottom">
+                </div>
+
+                <div
+                    class="absolute top-0 left-0 bg-stone-900/60 group-hover:bg-stone-900/40 transition-colors duration-500 w-full h-full p-12 flex flex-col gap-4">
+                    <p
+                        class="text-xs text-stone-400 tracking-widest">#REVIEW&emsp;#RECOMMENDED</p>
+                    <h4 class="text-white text-lg md:text-xl font-semibold">From
+                        Folklore to Fact: Tracing the Origins of
+                        Legendary Cryptids and Their Influence on Modern
+                        Science</h4>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <h4
+                            class="text-white text- tracking-wider font-medium group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300">
+                            READ MORE</h4>
+                        <i
+                            class="bi bi-arrow-right-short text-2xl text-white group-hover:text-green-400 dark:group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Arrow Buttons -->
+        <div class="flex justify-center items center gap-[4vw] my-3 ">
+            <button id="previous-button"
+                class="cursor-pointer group flex items-center p-3">
+                <p class="tracking-wider font-medium">Prev</p>
+                <i
+                    class="bi bi-chevron-left  text-2xl inline-block text-green-400 group-hover:text-shadow-lg group-hover:-translate-x-[3px] transition-transform transition-shadow duration-300"></i>
+            </button>
+            <button id="next-button"
+                class="cursor-pointer group flex items-center p-3">
+                <i
+                    class="bi bi-chevron-right text-2xl inline-block text-green-400 group-hover:text-shadow-lg group-hover:translate-x-[3px] transition-transform transition-shadow duration-300"></i>
+                <p class="tracking-wider font-medium">Next</p>
+            </button>
+        </div>
+
+        <!-- The cryptid corner -->
+        <div class="border-t border-stone-400">
+            <h3 class="tracking-wider text-3xl p-12 text-center">The Cryptid
+                Corner</h3>
+            <div class="border-t border-stone-400   lg:flex">
+                <img src="images/chupacabras-curious-night-time-habits.webp"
+                    alt="Blury photo of two chupacabras smiling at night in a forest"
+                    class="flex-none object-cover    md:min-w-[500px] lg:w-[50vw]"
+                    srcset="images/chupacabras-curious-night-time-habits.webp 1x, images/chupacabras-curious-night-time-habits-2x.webp 2x"
+                    loading="lazy" decoding="async">
+                <div>
+                    <h3 class="p-12 text-xl font-semibold">Chupacabra’s Curious
+                        Night-time Habits Finally Documented</h3>
+                    <p class="px-12 mb-12">After years of elusive sightings,
+                        researchers have finally observed the
+                        Chupacabra in its natural habitat. Known for its
+                        legendary livestock attacks, this nocturnal
+                        creature displays surprisingly methodical hunting
+                        strategies, often selecting smaller prey while
+                        avoiding larger animals. Experts suggest these behaviors
+                        point to advanced intelligence and
+                        adaptability, challenging the traditional “bloodthirsty
+                        monster” stereotype commonly portrayed in
+                        local folklore.<br><br>Field teams monitored several
+                        rural locations over multiple weeks, recording
+                        Chupacabra activity using night-vision cameras and
+                        motion sensors. Data revealed not only specific
+                        feeding patterns but also playful behaviors, such as
+                        chasing small animals without harming them.
+                        Researchers are now analyzing these findings to
+                        understand the creature’s social structure, energy
+                        conservation, and possible communication methods. The
+                        study also highlights the importance of
+                        respecting cryptid habitats, suggesting that coexistence
+                        may be more feasible than previously
+                        thought. These revelations could reshape public
+                        perception of the Chupacabra.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beastly behaviours -->
+        <div class="border-t border-stone-400">
+            <h3 class="tracking-wider text-3xl p-12 text-center">Beastly
+                Behaviours</h3>
+            <div class="border-t border-stone-400   lg:flex">
+                <div>
+                    <h3 class="p-12 text-xl font-semibold">Yeti Adaptations
+                        Reveal Incredible Cold-Endurance Abilities</h3>
+                    <p class="px-12 mb-12">Recent field research in the
+                        Himalayas shows Yetis thriving in sub-zero
+                        conditions that would challenge most mammals.
+                        Observations suggest their thick fur and unique
+                        circulatory adaptations allow them to maintain core body
+                        temperatures while moving efficiently
+                        across snowy landscapes, giving them a remarkable
+                        advantage in surviving extreme
+                        cold.<br><br>Scientists monitored Yetis at altitudes
+                        above 5,000 meters, noting behaviors like
+                        huddling for warmth, conserving energy during storms,
+                        and seeking sheltered areas. Thermal imaging
+                        revealed a surprising ability to regulate extremities,
+                        preventing frostbite while keeping muscles
+                        active. These adaptations may explain why the creatures
+                        remain so elusive to humans and why they
+                        have persisted in harsh environments for centuries.
+                        Understanding their biology could offer insights
+                        into extreme weather survival, potentially informing
+                        cold-weather gear design and revealing more
+                        about the limits of mammalian endurance.
+                    </p>
+                </div>
+                <img
+                    src="images/yeti-adaptations-reveal-incredible-cold-endurance-abilities.webp"
+                    srcset="images/yeti-adaptations-reveal-incredible-cold-endurance-abilities.webp 1x, images/yeti-adaptations-reveal-incredible-cold-endurance-abilities-2x.webp 2x"
+                    alt="Typical heavily snowy mountains where yetis are found"
+                    class="flex-none object-cover    md:min-w-[500px] lg:w-[50vw]"
+                    loading="lazy" decoding="async">
+            </div>
+        </div>
+
+        <!-- Recent Creature Sightings -->
+        <div class="border-t border-stone-400 p-12">
+            <h3 class="tracking-wider text-3xl pb-1 text-center">Monthly
+                Sightings</h3>
+            <p class="text-center text-stone-700 text-sm dark:text-white">Month
+                of September</p>
+        </div>
+
+
+        <div id="slide-holder-sightings" class="flex overflow-scroll snap-x snap-mandatory"></div>
+
+
+        <!-- Arrow Buttons -->
+        <div class="flex justify-center items center gap-[4vw] my-3">
+            <button id="previous-button-sightings"
+                class="cursor-pointer group flex items-center p-3">
+                <p class="tracking-wider font-medium">Prev</p>
+                <i
+                    class="bi bi-chevron-left  text-2xl inline-block text-green-400 group-hover:text-shadow-lg group-hover:-translate-x-[3px] transition-transform transition-shadow duration-300"></i>
+            </button>
+            <button id="next-button-sightings"
+                class="cursor-pointer group flex items-center p-3">
+                <i
+                    class="bi bi-chevron-right text-2xl inline-block text-green-400 group-hover:text-shadow-lg group-hover:translate-x-[3px] transition-transform transition-shadow duration-300"></i>
+                <p class="tracking-wider font-medium">Next</p>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class>
+            <hr class="border-1 mb-3 dark:border-stone-600">
+            <div class="xl:flex md:gap-24 md:my-8">
+                <div>
+                    <a href="index.html">
+                        <img id="footer-logo" src="images/logo-combo-light.webp"
+                            alt="The Cryptid Times Logo"
+                            class="block dark:hidden scale-80 md:max-w-[800px] mx-auto"
+                            loading="lazy" decoding="async">
+
+                        <img id="footer-logo" src="images/logo-combo-dark.webp"
+                            srcset="images/logo-combo-dark.webp 1x, images/logo-combo-dark-2x.webp 2x"
+                            alt="The Cryptid Times Logo"
+                            class="hidden dark:block scale-80 md:max-w-[800px] mx-auto"
+                            loading="lazy" decoding="async">
+
+                    </a>
+                    <p
+                        class="p-6 -mt-6 text-sm text-center  md:text-lg">Sightings,
+                        encounters, & paranormal investigations
+                        from the shadows of the unknown.
+                    </p>
+                </div>
+
+                <div>
+                    <div
+                        class="flex justify-between items-center mb-10 mx-14   md:justify-center md:gap-24">
+                        <div class="flex flex-col gap-5">
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Latest
+                                    Sightings</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Cryptid
+                                    Profiles</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Evidence
+                                    & Hoaxes</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Field
+                                    Reports</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Submit
+                                    A Sighting</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">About
+                                    Us</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Contact
+                                    Us</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Be
+                                    A Supporter</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Privacy
+                                    Policy</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+                            <div class="group flex flex-col">
+                                <a href="#"
+                                    class="font-medium  transition-colors duration-300">Terms
+                                    of Service</a>
+                                <span
+                                    class="inline-block w-0 group-hover:w-full h-[3px] bg-green-600  transition-[width] duration-500"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="dark:border-stone-600">
+            <p class="py-12 text-sm text-center"> © 2025 The Cryptid Times. All
+                rights reserved.</p>
+        </footer>
+
+    </body>
+
+</html>
