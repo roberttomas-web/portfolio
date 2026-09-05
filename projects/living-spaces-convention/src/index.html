@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Spaces Convention</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <!-- Bootsrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- Normal nav -->
+    <nav
+        class="bg-white/95 justify-center items-center h-20 gap-5 font-semibold rounded-xl sticky top-0 transition-all duration-500 z-50 hidden md:flex">
+        <a href="#speakers" class="nav-button">SPEAKERS</a>
+        <a href="#schedule" class="nav-button">SCHEDULE</a>
+        <a href="#partners" class="nav-button">PARTNERS</a>
+        <a href="#pre-party" class="nav-button">PRE-PARTY</a>
+        <a href="https://www.youtube.com/c/LaraconOnline"
+            class="nav-button bg-zinc-800 text-white hover:bg-zinc-600">PAST VIDEOS</a>
+    </nav>
+    <!-- Hamburger nav -->
+    <img id="hamburgur-icon" src="images/hamburgur.png"
+        class="absolute top-5 left-5 cursor-pointer transition-all duration-100 z-50 md:hidden">
+
+    <nav id="mobile-nav"
+        class="bg-white w-full h-0 overflow-hidden flex flex-col items-center gap-5 mt-5 font-semibold rounded-xl absolute top-0 left-0 transition-all duration-500 z-40 visible md:hidden">
+        <a href="#speakers" class="nav-button">SPEAKERS</a>
+        <a href="#schedule" class="nav-button">SCHEDULE</a>
+        <a href="#partners" class="nav-button">PARTNERS</a>
+        <a href="#pre-party" class="nav-button">PRE-PARTY</a>
+        <a href="https://www.youtube.com/c/LaraconOnline"
+            class="nav-button bg-zinc-800 text-white hover:bg-zinc-600">PAST VIDEOS</a>
+    </nav>
+
+
+    <header class="flex flex-col mt-14">
+        <h1 class="text-4xl md:text-6xl cool-font text-center">Living Spaces Convention</h1>
+        <img src="images/banner-002.png" class="mx-auto min-w-72">
+    </header>
+
+
+    <section
+        class="container mt-20 w-72 md:w-3/5 mx-auto text-xl md:text-2xl flex flex-col justify-center items-center gap-3">
+        <h2 class="text-4xl md:text-6xl cool-font">ABOUT</h2>
+        <p class="w-70 md:w-full text-center">The premier architecture showcase of the year, streaming September 14th on
+            <img src="images/youtube.png" class="inline h-5 md:h-7"><span class="font-bold">YouTube<span>.
+        </p>
+        <p class="text-lg md:text-xl text-center">We're thrilled to bring the Living Spaces Convention to a global
+            audience with a free livestream on YouTube — making it easy for architects, designers, and enthusiasts
+            everywhere to tune in. A huge thank you to our incredible partners for making this possible!</p>
+        <p class="text-lg md:text-xl text-center"><span class="font-bold">All talks are completely new</span>, never
+            before presented at any Living Spaces event, and delivered live throughout the day. We have 18 visionary
+            speakers ready to share insights on the future of architecture, sustainable living, and innovative urban
+            design — including a keynote on the evolving relationship between space, structure, and society.</p>
+
+        <iframe class="mt-4 rounded-2xl w-full aspect-video"
+            src="https://www.youtube.com/embed/ibwvGn3PkFg?si=Om9JbT-ISoFtyQjB" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <a href="#" class="btn-1 my-5 text-lg md:text-xl cool-font">SET A REMINDER</a>
+
+        <p class="text-xl font-bold">Can't watch it <span class="text-red-500">●</span> LIVE?</p>
+        <p class="text-lg text-center"><span class="font-bold">No problem</span>, all talks will be recorded and available online to watch at your convenience shortly after the convention concludes.</p>
+    </section>
+
+
+    <section class="bg-amber-50/40 container p-8 mt-30 mx-auto flex flex-col justify-center items-center w-full">
+        <h3 id="speakers" class="text-4xl md:text-6xl cool-font">SPEAKERS</h3>
+        <p class="text-lg md:text-xl my-4">The leading minds, designers, and innovators from across the architecture and design community.</p>
+
+        <div class="container w-10/12 flex justify-center items-center flex-wrap">
+
+            <span class="flex flex-col justify-center items-center mx-10 my-4 flex-none w-40">
+                <img src="images/speaker-001.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Clara Ng</p>
+                <p class="text-gray-600 text-center">Lead Architect @ Forma</p>
+            </span>
+            <span class="flex flex-col justify-center items-center mx-10 my-4 flex-none w-40">
+                <img src="images/speaker-002.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Julian Park</p>
+                <p class="text-gray-600 text-center">Urban Planner @ FutureScape</p>
+            </span>
+            <span class="flex flex-col justify-center items-center mx-10 my-4 flex-none w-40">
+                <img src="images/speaker-003.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Ava Roguez</p>
+                <p class="text-gray-600 text-center">Founder of GreenHabitats</p>
+            </span>
+            <span class="flex flex-col justify-center items-center mx-10 my-4 flex-none w-50">
+                <img src="images/speaker-004.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Dinesh Kapoor</p>
+                <p class="text-gray-600 text-center">Director of Sustainability @ ArchiNova</p>
+            </span>
+
+            <span id="seeAllBtn" class="btn-1 my-5 text-xl md:text-3xl cool-font md:hidden cursor-pointer">SEE
+                ALL</span>
+
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-005.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Lena Bogard</p>
+                <p class="text-gray-600 text-center">Interior Designer</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-006.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Theo Ramires</p>
+                <p class="text-gray-600 text-center">Principal @ Axis Design</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-007.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Harper Lin</p>
+                <p class="text-gray-600 text-center">Architectural Technologist</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-008.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Miles Okafor</p>
+                <p class="text-gray-600 text-center">Smart City Consultant</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-009.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Yuki Tanaka</p>
+                <p class="text-gray-600 text-center">Specialist @ WoodForm Japan</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-010.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Samira Karim</p>
+                <p class="text-gray-600 text-center">Professor of Urban Design @ DTU</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-011.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Eric Mendoza</p>
+                <p class="text-gray-600 text-center">Founder of Modular Living</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-012.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Nora Vasileva</p>
+                <p class="text-gray-600 text-center">Historic Preservationist</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-013.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Zahra Khan</p>
+                <p class="text-gray-600 text-center">Community Housing Advocate</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-014.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Liam Ndlovu</p>
+                <p class="text-gray-600 text-center">BIM Specialist</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-015.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Emily Zhang</p>
+                <p class="text-gray-600 text-center">Landscape Architect</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-016.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">René Dubois</p>
+                <p class="text-gray-600 text-center">Passive House Expert</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-017.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Bryce Adler</p>
+                <p class="text-gray-600 text-center">Designer @ VoroForm</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-018.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Marina Costa</p>
+                <p class="text-gray-600 text-center">Author of 'Living Small'</p>
+            </span>
+            <span class="flex-col justify-center items-center mx-10 my-4 flex-none w-40 person hidden md:flex">
+                <img src="images/speaker-019.jpg" class="size-40 rounded-full">
+                <p class="font-bold text-xl md:text-2xl">Gianni Moret</p>
+                <p class="text-gray-600 text-center">Founder of FormShift Labs</p>
+            </span>
+        </div>
+    </section>
+
+
+    <section class="container mt-20 mx-auto flex flex-col justify-center items-center w-72 md:w-3/5">
+
+        <h3 id="schedule" class="text-4xl md:text-6xl cool-font">SCHEDULE</h3>
+        <p class="my-4 text-lg md:text-xl text-center"><span class=font-bold>8</span> deep-dive talks covering diverse architectural topics, plus <span class=font-bold>11</span> fast-paced lightning talks to sharpen your skills and spark fresh ideas.</p>
+
+        <section class="flex flex-col lg:flex-row gap-20">
+
+            <!-- Left Side Parent -->
+            <div class="flex flex-col gap-4 lg:flex-start">
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">10:45am</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p>Doors open</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">11:00am</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Designing Cities for Humans, Not Cars</p>
+                        <p>by Julian Park</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">11:40pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Biophilic Architecture: More Than Just a Trend</p>
+                        <p>by Clara Ng</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">12:20pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Sustainable Living in High-Density Spaces</p>
+                        <p>by Zahra Khan</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">1:00pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p>Break</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">1:20pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Passive House Basics in 10 Minutes</p>
+                        <p>by René Dubois</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">1:35pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Lighting That Thinks: Smart Illumination for Smart Spaces</p>
+                        <p>by Nora Vasileva</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">1:50pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Rapid-Fire BIM Tips You’ll Actually Use</p>
+                        <p>by Liam Ndlovu</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">2:05pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Designing for Climate: Tools You Can Use Today</p>
+                        <p>by Dinesh Kapoor</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">2:20pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">The Power of Modular Thinking</p>
+                        <p>by Eric Mendoza</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">2:35pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">AI in Architecture: From Concept to Construction</p>
+                        <p>by Harper Lin</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">3:15pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p>Break</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Parent -->
+            <div class="flex flex-col gap-4">
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">3:35pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Reviving the Past: The Art of Adaptive Reuse</p>
+                        <p>by Jasper Reeve</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">4:35pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">The Future of Timber: Rethinking Natural Materials</p>
+                        <p>by Yuki Tanaka</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">5:15pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Smart Cities & the Ethics of Data-Driven Design</p>
+                        <p>by Miles Okafor</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">5:55pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p>Break</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">6:15pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Furniture that Moves with You</p>
+                        <p>by Bryce Adler</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">6:30pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Soundscapes in Architecture: The Invisible Layer</p>
+                        <p>by Lena Bouchard</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">6:45pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Reclaiming Urban Edges: Microparks & Pop-Ups</p>
+                        <p>by Emily Zhang</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">7:00pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">3D Printing in Residential Design: What’s Ready Now?</p>
+                        <p>by Gianni Moretti</p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">7:15pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Design Ethics in Emerging Markets</p>
+                        <p>by Samira Karim </p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                            TALK</span>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">7:30pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Designing with AI: Collaborative Creativity</p>
+                        <p>by Theo Ramires </p>
+                        <span
+                            class="mr-auto bg-orange-400 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">LIGHTNING
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="flex flex-col lg:flex-row gap-4 items-center lg:flex-start">
+                    <p class="text-xl font-semibold w-20">7:45pm</p>
+                    <div class="bg-gray-100/50 px-4 py-2 border-l-3 border-gray-300 w-screen lg:w-90">
+                        <p class="text-2xl font-bold">Tiny Homes, Big Shifts: A Lifestyle Perspective</p>
+                        <p>by Marina Costa</p>
+                        <span
+                            class="mr-auto bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-xl tracking-widest">TALK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="bg-amber-50/40 mt-20 pb-10">
+        <div class="container flex flex-col justify-center items-center mx-auto w-72 md:w-3/5">
+            <h3 id="partners" class="text-4xl md:text-6xl pt-5 cool-font">PARTNERS</h3>
+            <p class="my-3 text-xl font-semibold">Our partners bring our vision to life...</p>
+            <p class="my-3 text-xl text-slate-700">Thanks to their support, the Living Spaces Convention is open and <span class=font-bold>free to everyone</span>.</p>
+            <p class="text-3xl text-red-500 font-semibold cool-font mb-10">Thank you!</p>
+
+            <!-- Gold Sponsors -->
+            <h4 class="font-bold text-xl m-6">GOLD</h4>
+            <span class="flex gap-4 justify-center flex-wrap">
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/g-1.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/g-2.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/g-3.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/g-4.png">
+                    </div>
+                </a>
+            </span>
+
+            <!-- Silver Sponsors -->
+            <h4 class="font-bold text-xl m-6 mt-18">SILVER</h4>
+            <span class="flex gap-4 justify-center flex-wrap">
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/s-1.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/s-2.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/s-3.png">
+                    </div>
+                </a>
+            </span>
+
+            <!-- Coomunity Sponsors -->
+            <h4 class="font-bold text-xl m-6 mt-18">COMMUNITY</h4>
+            <span class="flex gap-4 justify-center flex-wrap">
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-1.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-2.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-3.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-4.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-5.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-6.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/c-7.png">
+                    </div>
+                </a>
+            </span>
+
+
+
+            <!-- Founding Sponsors -->
+            <h4 class="font-bold text-xl m-6 mt-18">FOUNDING PARTNERS</h4>
+            <span class="flex gap-4 justify-center flex-wrap">
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/f-1.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/f-2.png">
+                    </div>
+                </a>
+
+                <a href="#" class="hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white h-40 w-80 flex justify-center items-center shadow-xl">
+                        <img src="images/f-3.png">
+                    </div>
+                </a>
+            </span>
+
+            <a href="#" class="btn-1 my-5 text-lg md:text-xl cool-font">BECOME A PARTNER</a>
+        </div>
+    </section>
+
+
+
+    <!-- Mingle section -->
+    <div class="mt-3 container w-72 md:w-3/5 mx-auto flex flex-col justify-center items-center">
+        <h3 id="pre-party" class="text-4xl md:text-6xl pt-6 cool-font">PRE-PARTY</h3>
+        <p class="my-3 text-lg md:text-xl">Tune in the official pre-party no other than the <span class="italic">dynamo
+                duo</span>
+            <a href="https://twitter.com/freekmurze" class="font-bold">@freekmurze</a> and <a
+                href="https://twitter.com/christophrumpel" class="font-bold">@christophrumpel</a> to warm-up the crowd.
+        </p>
+        <p class="text-black/70 text-xl">Join us on September the 13th let's discuss the upcoming event.</p>
+
+        <iframe class="mt-4 rounded-2xl w-full aspect-video z-10"
+            src="https://www.youtube.com/embed/MvXZzKZ3JYQ?si=_RKgtNsIpVGeBs17"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <a href="#" class="btn-1 my-5 text-lg md:text-xl cool-font z-10">SET A REMINDER</a>
+    </div>
+
+
+
+    <img src="images/banner-003.png" class="mx-auto -mt-30 md:-mt-80 lg:-mt-110 -z-20 opacity-70">
+
+    <footer class="bg-black z-50">
+        <div class="container mx-auto pt-10 pb-10 flex flex-col justify-center items-center relative bottom-0">
+            <p class="text-white/80">© 2025 Living Spaces Convention. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
